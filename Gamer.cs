@@ -18,6 +18,21 @@ namespace SaveDragon
         {
             Name = Names[namesCounter];
             namesCounter++;
+            gamerEggs = new List<Card> { };
+            gamerDragons = new List<Card> { };
+            gamerCards = new List<Card> { };
+        }
+
+        public List<Card> GetCardFromDeck(Deck cardDeck, int cardCount)
+        {
+            List<Card> cards = new List<Card> { };
+            for (int i = 0; i < cardCount; i++)
+            {
+                cards.Add(deck.deck[0]);
+                deck.deck.RemoveAt(0);
+            }
+
+            return cards;
         }
     }
 }
