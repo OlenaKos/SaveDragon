@@ -8,10 +8,10 @@ namespace SaveDragon
 {
     interface IActions
     {
-        bool useMamaMamaCombination();
-        bool useMamaPapaNestCombination();
-        bool usePapaPapaCombination();
-        bool useThieftCombination();
-        bool useThrowCardCombination();
+        bool UseMamaMamaCombination();
+        bool UseMamaPapaNestCombination();
+        bool UsePapaPapaCombination();
+        bool UseThieftCombination();
+        bool UseThrowCardCombination();
     }
 }

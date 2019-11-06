@@ -11,28 +11,18 @@ namespace SaveDragon
         public static string[] Names = new string [] {"James Bond", "Harry Potter", "Sara O'Connor", "Chuck Norris"};
         public static int namesCounter = 0;
         public string Name { get; set; }
-        public List<Card> gamerCards { set; get; }
-        public List<Card> gamerEggs { get; set; }
-        public List<Card> gamerDragons { get; set; }
+        public List<Card> GamerCards { set; get; }
+        public List<Card> GamerEggs { get; set; }
+        public List<Card> GamerDragons { get; set; }
         public Gamer()
         {
             Name = Names[namesCounter];
             namesCounter++;
-            gamerEggs = new List<Card> { };
-            gamerDragons = new List<Card> { };
-            gamerCards = new List<Card> { };
+            GamerEggs = new List<Card> { };
+            GamerDragons = new List<Card> { };
+            GamerCards = new List<Card> { };
         }
 
-        public List<Card> GetCardFromDeck(Deck cardDeck, int cardCount)
-        {
-            List<Card> cards = new List<Card> { };
-            for (int i = 0; i < cardCount; i++)
-            {
-                cards.Add(deck.deck[0]);
-                deck.deck.RemoveAt(0);
-            }
 
-            return cards;
-        }
     }
 }
