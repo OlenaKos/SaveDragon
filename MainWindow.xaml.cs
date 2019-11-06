@@ -25,9 +25,7 @@ namespace SaveDragon
             InitializeComponent();
             Deck deck = new Deck();
             Gamer gamer = new Gamer();
-
-
-            int i;
+            Gamer gamer2 = new Gamer();
         }
     }
 }
