@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SaveDragon
+namespace SaveDragon2
 {
     class Deck
     {
@@ -13,7 +13,7 @@ namespace SaveDragon
         public static int amountEgg = 24;
         public static int amountMother = 10;
         public static int amountFather = 10;
-        public static int amountNest = 7;
+        public static int amountNest = 8;
         public List<Card> deck { get; set; }
         public Deck() 
         {

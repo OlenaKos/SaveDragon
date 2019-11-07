@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SaveDragon
+namespace SaveDragon2
 {
     class Father : Card
     {

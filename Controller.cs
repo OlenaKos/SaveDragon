@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace SaveDragon2
 {
-    class Bot : Gamer
+    class Controller
     {
-        public Bot() { }
+
+        //create exemplar of game
     }
 }

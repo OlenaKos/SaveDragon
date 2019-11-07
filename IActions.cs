@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SaveDragon
+namespace SaveDragon2
 {
     interface IActions
     {
-        bool UseMamaMamaCombination();
-        bool UseMamaPapaNestCombination();
-        bool UsePapaPapaCombination();
-        bool UseThieftCombination();
-        bool UseThrowCardCombination();
+        void UseThrowCardCombination(Gamer gamer, int CardID, Deck cardDeck);
+        void UseMamaMamaCombination(Gamer gamer, Deck cardDeck);
+        bool UseMamaPapaNestCombination(Gamer gamer);
+        bool UsePapaPapaCombination(Gamer gamer);
+        bool UseThieftCombination(Gamer gamer);
     }
 }
